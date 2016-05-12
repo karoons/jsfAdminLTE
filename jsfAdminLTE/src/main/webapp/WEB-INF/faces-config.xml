@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config version="2.1"
+              xmlns="http://java.sun.com/xml/ns/javaee" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
+    <application>
+        <locale-config>
+            <default-locale>en</default-locale>
+            <supported-locale>en</supported-locale>
+            <supported-locale>en_US</supported-locale>
+        </locale-config>
+        <context-param>
+            <description>State saving method: 'client' or 'server' (=default). See JSF Specification 2.5.2</description>
+            <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+            <param-value>server</param-value>
+        </context-param>
+<!--        <resource-bundle>
+            <base-name>dbconfig</base-name>
+            <var>dbconfig</var>
+        </resource-bundle>
+        <resource-bundle>
+            <base-name>program</base-name>
+            <var>program</var>
+        </resource-bundle>-->
+    </application>
+
+</faces-config>
