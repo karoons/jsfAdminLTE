@@ -5,13 +5,13 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
-    
+
     <f:view contentType="text/html" encoding="UTF-8">
         <h:head>
             <meta charset="utf-8"/>
-            
+
             <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-            
+
             <title>AdminLTE 2 | Blank Page</title>
             <!-- Tell the browser to be responsive to screen width -->
             <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
@@ -19,7 +19,8 @@
             <!-- Bootstrap 3.3.5 -->
             <h:outputStylesheet library="bootstrap" name="css/bootstrap.min.css" />
             <!-- Font Awesome -->
-            <h:outputStylesheet library="font-awesome" name="css/font-awesome.min.css" />
+            <!--<h:outputStylesheet library="font-awesome" name="css/font-awesome.min.css" />-->
+            <h:outputStylesheet library="webjars" name="font-awesome/4.4.0/css/font-awesome-jsf.css"/>
             <!-- Ionicons -->
             <h:outputStylesheet library="ionicons" name="css/ionicons.min.css" />
 
@@ -28,7 +29,7 @@
 
             <!-- AdminLTE Skins. Choose a skin from the css/skins
             folder instead of downloading all of them to reduce the load. -->
-            
+
             <h:outputStylesheet library="adminlte" name="skins/_all-skins.min.css"/>
             <h:outputStylesheet library="adminlte" name="skins/skin-black.min.css"/>
 
@@ -141,9 +142,29 @@
                                     <!--<li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>-->
                                 </ul>
                             </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="fa fa-book"></i> <span>My Profile</span> <i class="fa fa-angle-left pull-right"></i>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="profile.jsf"><i class="fa fa-sitemap"></i> <span>Org Chart</span> <small class="label pull-right bg-green">Hot</small></a></li>
+                                    <!--<li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+                                    <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </section>
                 </aside>
+                
+                <div class="content-wrapper"></div>                
 
                 <footer class="main-footer">
                     <div class="pull-right hidden-xs">
