@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html" >
+    <body>
+        <ui:composition>
+                <header class="main-header">
+                    <!-- Logo -->
+                    <a href="../../index2.html" class="logo">
+                        <!-- mini logo for sidebar mini 50x50 pixels -->
+                        <span class="logo-mini">MPG</span>
+                        <!-- logo for regular state and mobile devices -->
+                        <span class="logo-lg">MPG-Center</span>
+                    </a>
+                    <!-- Header Navbar: style can be found in header.less -->
+                    <nav class="navbar navbar-static-top" role="navigation">
+                        <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                            <span class="sr-only"><h:outputText value=" Toggle navigation" /></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <div class="navbar-custom-menu">
+                            <ul class="nav navbar-nav" >
+                                <!-- Messages: style can be found in dropdown.less-->
+                                <li class="dropdown messages-menu" >
+                                    <a  href="#" class="fa fa-envelope-o dropdown-toggle" data-toggle="dropdown">
+                                        <span class="label label-success">0</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="header">You have 0 messages</li>
+                                    </ul>
+                                </li>
+                                <!-- Notifications: style can be found in dropdown.less -->
+                                <li class="dropdown notifications-menu">
+                                    <a href="#" class="fa fa-bell-o dropdown-toggle" data-toggle="dropdown">
+                                         <!--<i class="fa fa-bell-o"></i>-->
+                                        <span class="label label-warning">0</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="header">You have 0 notifications</li>
+                                    </ul>
+                                </li>
+                                <!-- Tasks: style can be found in dropdown.less -->
+                                <li class="dropdown tasks-menu">
+                                    <a href="http://servicedesk.mitrphol.com/" title="แจ้งปัญหา" target="blank" class="dropdown-toggle" >
+                                        <!--<i class="fa fa-wrench"></i>-->
+                                        <h:outputText value="แจ้งปัญหา" />
+                                        
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="header">You have 0 tasks</li>
+                                    </ul>
+                                </li>
+                                <!-- User Account: style can be found in dropdown.less -->
+                                <li class="dropdown user user-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <h:graphicImage  class="user-image" library="images" name="userLogo.png"/>
+                                        <h:outputText value="Karoon Sillapapan" />
+                                        <span class="hidden-xs"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <!-- User image -->
+                                        <li class="user-header">
+                                            <h:graphicImage  class="img-circle" library="images" name="userLogo.png"/>
+                                            <p>
+                                                <small><h:outputText value=" Email :" /></small>
+                                            </p>
+                                        </li>
+                                        <!-- Menu Footer-->
+                                        <li class="user-footer">
+                                            <div class="pull-left">
+                                                <a href="profile.jsf" class="btn btn-default btn-flat">Profile</a>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#" class="btn btn-default btn-flat btn-logout-form">Sign out</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+        </ui:composition>
+    </body>
+</html>

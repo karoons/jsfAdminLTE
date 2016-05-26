@@ -58,7 +58,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>*.lnw</url-pattern>
+        <url-pattern>*.mp</url-pattern>
     </servlet-mapping>
     
     <session-config>
@@ -66,6 +66,7 @@
     </session-config>
     
     <welcome-file-list>
-        <welcome-file>blank.lnw</welcome-file>
+        <!--<welcome-file>blank.lnw</welcome-file>-->
+        <welcome-file>core/main.mp</welcome-file>
     </welcome-file-list>
 </web-app>

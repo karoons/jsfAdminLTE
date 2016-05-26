@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <f:view contentType="text/html" encoding="UTF-8">
+        <h:head>
+            <meta charset="utf-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+            <title>Mitrphol government center</title>
+            <!-- Tell the browser to be responsive to screen width -->
+            <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+            <!-- Bootstrap 3.3.5 -->
+            <h:outputStylesheet library="webjars" name="font-awesome/4.4.0/css/font-awesome-jsf.css"/>
+            
+            <h:outputStylesheet library="bootstrap" name="css/bootstrap.min.css" />
+            <!-- Font Awesome -->
+            <!--<h:outputStylesheet library="font-awesome" name="css/font-awesome.min.css" />-->
+            <!-- Ionicons -->
+            <h:outputStylesheet library="ionicons" name="css/ionicons.min.css" />
+
+            <!-- Theme style -->
+            <h:outputStylesheet library="adminlte" name="dist/css/AdminLTE.min.css" />
+
+            <!-- AdminLTE Skins. Choose a skin from the css/skins
+            folder instead of downloading all of them to reduce the load. -->
+
+            <h:outputStylesheet library="adminlte" name="skins/_all-skins.min.css"/>
+            <h:outputStylesheet library="adminlte" name="skins/skin-black.min.css"/>
+
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+        </h:head>
+        <h:body class="hold-transition skin-blue-light sidebar-mini sidebar-collapse">
+
+            <p:growl  id="messages" showDetail="true" life="3000" autoUpdate="true"
+                      sticky="false" />
+
+            <p:dialog modal="true" widgetVar="statusDialog" header="Loading..." resizable="false"
+                      draggable="false" closable="false">  
+                <p:graphicImage value="./resources/images/ajax-loader.gif" />  
+            </p:dialog> 
+
+            <div id="wrap">
+
+                <ui:insert name="header">
+                    <ui:include src="header.xhtml"></ui:include>
+                </ui:insert>
+
+                <ui:insert name="leftSide">
+                    <ui:include src="leftSide.xhtml"></ui:include>
+                </ui:insert>
+
+                <ui:insert rendered="" name="content"></ui:insert>
+
+                <ui:insert name="footer">
+                    <ui:include src="footer.xhtml"></ui:include>
+                </ui:insert>
+
+                <ui:insert name="controlSidebar">
+                    <ui:include src="controlSidebar.xhtml"></ui:include>
+                </ui:insert>
+
+            </div><!-- end #wrap -->
+
+
+            <!-- jQuery 2.2.0 -->
+            <h:outputScript library="plugins" name="jQuery/jQuery-2.2.0.min.js"/>
+            <!-- Bootstrap 3.3.6 -->
+            <h:outputScript library="bootstrap" name="js/bootstrap.min.js"/>
+            <!-- SlimScroll -->
+            <h:outputScript library="plugins" name="slimScroll/jquery.slimscroll.min.js"/>
+            <!-- FastClick -->
+            <h:outputScript library="plugins" name="fastclick/fastclick.js"/>
+            <!-- AdminLTE App -->
+            <h:outputScript library="adminlte" name="dist/js/app.min.js"/>
+            <!-- AdminLTE for demo purposes -->
+            <h:outputScript library="adminlte" name="dist/js/demo.js"/>
+        </h:body>
+    </f:view>
+
+</html>
