@@ -1,5 +1,14 @@
 ﻿Sitemap
 main.xhtml (Show notification for module)
+	core/template
+		header.xhtml
+		leftSide.xhtml
+		footer.xhtml
+		controleSidebar.xhtml
+		mainTemplate.xhtml
+	core/member
+		login.xhtml
+	core/member/permission
 	pnp/sale/
 	it/infra
 	hr/masterdata/workflow
