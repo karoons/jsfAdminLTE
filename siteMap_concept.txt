@@ -1,0 +1,7 @@
+﻿Sitemap
+main.xhtml (Show notification for module)
+	pnp/sale/
+	it/infra
+	hr/masterdata/workflow
+
+	
